@@ -7,13 +7,16 @@ public class Nurse {
 	private int idNurse;
 	private String name;
 	private String password;
-	private boolean isLogged;
 	private static int totalNurse;
 
 	public Nurse(String name, String password) {
 		this.idNurse = totalNurse + 1;
 		this.name = name;
 		this.password = password;
+	}
+
+	public int getIdNurse() {
+		return idNurse;
 	}
 
 	public String getName() {
@@ -30,14 +33,6 @@ public class Nurse {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public boolean isLogged() {
-		return isLogged;
-	}
-
-	public void setLogged(boolean isLogged) {
-		this.isLogged = isLogged;
 	}
 
 }
