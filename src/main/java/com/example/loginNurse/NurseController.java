@@ -18,11 +18,11 @@ public class NurseController {
 
 	public NurseController() {
 		super();
-		nurses.add(new Nurse("Pedro", "Pass0"));
-		nurses.add(new Nurse("Antonio", "Pass1"));
-		nurses.add(new Nurse("Alexandra", "Pass2"));
-		nurses.add(new Nurse("Carla", "Pass3"));
-		nurses.add(new Nurse("Jhon", "Pass4"));
+		nurses.add(new Nurse("Pedro", "Pass0", 25, "Enfermero"));
+		nurses.add(new Nurse("Antonio", "Pass1", 38, "Cardiologia"));
+		nurses.add(new Nurse("Alexandra", "Pass2", 40, "Cardiologia"));
+		nurses.add(new Nurse("Carla", "Pass3", 48, "Laboratorio"));
+		nurses.add(new Nurse("Jhon", "Pass4", 36, "Dermatologo"));
 	}
 
 	@PostMapping("/login")
