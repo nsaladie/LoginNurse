@@ -1,8 +1,5 @@
 package com.example.loginNurse;
 
-/*public record Nurse(boolean isLogged) {
-}*/
-
 public class Nurse {
 	private int idNurse;
 	private String name;
@@ -11,12 +8,29 @@ public class Nurse {
 	private String speciality;
 	private static int totalNurse;
 
-	public Nurse(String name, String password,  int age, String speciality) {
+	public Nurse(String name, String password, int age, String speciality) {
 		this.idNurse = totalNurse + 1;
 		this.name = name;
 		this.password = password;
 		this.age = age;
 		this.speciality = speciality;
+		totalNurse++;
+	}
+
+	public void setSpeciality(String speciality) {
+		this.speciality = speciality;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getSpeciality() {
+		return speciality;
 	}
 
 	public int getIdNurse() {
